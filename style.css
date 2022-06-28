@@ -203,6 +203,13 @@ nav h1 {
     justify-content: flex-start;
 }
 
+.badge-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
 .product-item h1 {
     font-weight: 800;
     font-size: 50px;
