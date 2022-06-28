@@ -186,7 +186,7 @@ nav h1 {
     padding: 20px 80px;
     height: 100%;
     gap: 10px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr auto;
 }
 
 .p-item1 {
@@ -201,6 +201,31 @@ nav h1 {
     padding: 30px;
     transition: all 0.3s ease;
     justify-content: flex-start;
+}
+
+.btn-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    background-color: f5f5f555;
+    align-self: center;
+    border-radius: 50%;
+    border: none;
+    padding: 5px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-more:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.more-icon {
+    width: 40px;
+    height: 40px;
 }
 
 .badge-icon {
@@ -287,6 +312,10 @@ nav h1 {
 
 /* About Section */
 
+#about {
+    padding-bottom: -100px;
+}
+
 .about-container {
     width: 100%;
     display: flex;
@@ -298,7 +327,6 @@ nav h1 {
     text-align: center;
     margin-top: -12%;
     font-weight: 800;
-    text-shadow: 5px 5px 5px #c7c7c7;
     font-size: 48px;
 }
 
@@ -306,18 +334,12 @@ nav h1 {
     width: 800px;
     height: 250px;
     margin: 100px auto;
-    background-color: black;
-    background-color: #d8dfcf;
-    border-radius: 15px;
+    background-color: #e4e6e2;
+    border-radius: 10px;
     box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.08);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    transition: all 0.3s ease;
-}
-
-.about-box:hover {
-    transform: scale(1.1);
 }
 
 .about-box img {
@@ -338,4 +360,72 @@ blockquote p {
     padding-left: 20px;
     font-weight: 400;
     text-align: justify;
+}
+
+.wave-3 {
+    margin-top: -100px;
+}
+
+
+/* product table section */
+
+#product-table {
+    background-color: #8b9e70;
+    height: 80vh;
+    margin-top: -1%;
+    margin-bottom: 15%;
+}
+
+#product-table h1 {
+    width: 50%;
+    text-align: center;
+    color: #fff;
+    font-weight: 800;
+    font-size: 48px;
+}
+
+.product-table-container {
+    display: grid;
+    height: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.product-table-container img {
+    border-radius: 50%;
+    padding: 0 40px;
+    width: 500px;
+    height: 500px;
+}
+
+table {
+    width: 800px;
+    padding: 20px;
+    overflow: hidden;
+    border-collapse: collapse;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 20px 30px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+table:hover {
+    transform: scale(1.1);
+}
+
+th,
+td {
+    padding: 34px;
+    text-align: center;
+}
+
+thead th {
+    background-color: #b0cf83;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e9ecef;
 }
